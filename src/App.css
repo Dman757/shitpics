@@ -1,29 +1,24 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+html {
+  animation: backgroundShit infinite 5s;
+  animation-direction: alternate;
 }
 
 .App-header {
   background-color: rgb(255, 0, 234);
-  height: 1920px;
-  padding: 20px;
-  color: white;
-  animation: headerShit infinite 5s;
-  animation-direction: alternate;  
 }
 
-.App-title {
+.App-title {  
+  margin: 0;
   font-size: 1.5em;
   animation: titleShit infinite 1s;
   animation-direction: alternate;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 @keyframes App-logo-spin {
@@ -36,7 +31,7 @@
   to { font-size: 5em; color: rgb(0, 255, 157); }
 }
 
-@keyframes headerShit {
+@keyframes backgroundShit {
   from {background-color: rgb(255, 0, 234); }
   to {background-color: rgb(0, 204, 255); }
 }
