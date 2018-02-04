@@ -8,14 +8,18 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: rgb(255, 0, 234);
+  height: 1920px;
   padding: 20px;
   color: white;
+  animation: headerShit infinite 5s;
+  animation-direction: alternate;  
 }
 
 .App-title {
   font-size: 1.5em;
+  animation: titleShit infinite 1s;
+  animation-direction: alternate;
 }
 
 .App-intro {
@@ -25,4 +29,14 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes titleShit {
+  from { font-size: 1.5em; color: rgb(255, 0, 0); }
+  to { font-size: 5em; color: rgb(0, 255, 157); }
+}
+
+@keyframes headerShit {
+  from {background-color: rgb(255, 0, 234); }
+  to {background-color: rgb(0, 204, 255); }
 }
