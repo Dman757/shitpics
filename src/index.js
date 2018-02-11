@@ -1,8 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import Router from './Router/Router'
 import registerServiceWorker from './registerServiceWorker'
+import { BrowserRouter } from 'react-router-dom'
+import 'semantic-ui-css/semantic.min.css'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render((
+  <BrowserRouter>
+    <Router routeprops={this.props} />
+  </BrowserRouter>
+), document.getElementById('root'))
 registerServiceWorker()
