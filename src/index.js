@@ -11,7 +11,7 @@ import thunk from 'redux-thunk'
 import 'semantic-ui-css/semantic.min.css'
 
 import rootReducer from './reducers'
-import Router from './Router/Router'
+import Router from './router/Router'
 
 import registerServiceWorker from './registerServiceWorker'
 

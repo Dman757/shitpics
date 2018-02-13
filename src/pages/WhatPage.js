@@ -1,5 +1,5 @@
 import React from 'react'
-import What from '../Components/What'
+import What from '../components/What'
 
 const WhatPage = (props) => (
   <What />

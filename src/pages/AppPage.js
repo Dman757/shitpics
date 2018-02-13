@@ -1,5 +1,5 @@
 import React from 'react'
-import App from '../Components/App'
+import App from '../components/App'
 
 const AppPage = (props) => (
   <App routeshit={props} />
