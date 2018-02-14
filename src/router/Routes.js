@@ -11,7 +11,6 @@ const routes = [
   },
   {
     path: '/what',
-    exact: true,
     component: WhatPage
   }
 ]

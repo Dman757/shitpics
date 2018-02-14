@@ -1,8 +1,8 @@
 import React from 'react'
-import What from '../components/What'
+import WordpressContainer from '../containers/WordpressContainer'
 
 const WhatPage = (props) => (
-  <What />
+  <WordpressContainer />
 )
 
 export default WhatPage

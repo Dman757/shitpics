@@ -22,7 +22,8 @@ const middleware = [ // Our full list of middleware organized, used below
 
 const store = createStore(
   rootReducer, // Combined reducers from ./reducers/index.js
-  applyMiddleware(...middleware)
+  applyMiddleware(thunk, reduxPackMiddleware),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
 ReactDOM.render((
