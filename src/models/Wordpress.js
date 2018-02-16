@@ -3,7 +3,11 @@ import { get } from '../requester'
 const Wordpress = {}
 
 Wordpress.getAllPosts = async () => {
-  return get('v2/posts')
+  return get('wp/v2/posts')
+}
+
+Wordpress.getAllPages = async () => {
+  return get('wp/v2/pages')
 }
 
 export default Wordpress

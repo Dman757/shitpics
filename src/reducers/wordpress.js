@@ -15,6 +15,7 @@ const initialState = {
 
 const wordpressReducer = (state = initialState, action) => {
   const { type, payload } = action
+  console.log(action)
   switch (type) {
     case WORDPRESS_GET_ALL:
     case WORDPRESS_GET_ALL_PAGES:

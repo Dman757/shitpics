@@ -16,6 +16,7 @@ wordpress.getAll = () => {
 
 // Returns all Pages
 wordpress.getAllPages = () => (dispatch) => {
+  console.log('what')
   return dispatch({
     type: WORDPRESS_GET_ALL_PAGES,
     promise: Wordpress.getAllPages()

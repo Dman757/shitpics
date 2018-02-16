@@ -4,7 +4,7 @@ import actions from '../actions'
 import { connect } from 'react-redux'
 
 const mapStateToProps = (state) => {
-  //Do stuff with data then return only what you need
+  // Do stuff with data then return only what you need
   return {
     // loading: state.wordpress.isLoading,
   }
@@ -17,7 +17,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => ({
   // onSubmit: bindActionCreators(actions.account.signup, dispatch),
-  loadPages: bindActionCreators(actions.wordpress.getAllPages, dispatch)
+  loadPages: bindActionCreators(actions.wordpress.getAllPages, dispatch),
+  loadPosts: bindActionCreators(actions.wordpress.getAllPosts, dispatch)
 })
 
 const WordpressContainer = connect(

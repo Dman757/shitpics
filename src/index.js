@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createStore, applyMiddleware } from 'redux'
+import { compose, createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 
@@ -15,15 +15,14 @@ import Router from './router/Router'
 
 import registerServiceWorker from './registerServiceWorker'
 
-const middleware = [ // Our full list of middleware organized, used below
-  thunk,
-  reduxPackMiddleware
-]
+const middleware = applyMiddleware(thunk, reduxPackMiddleware)
+
+console.log(rootReducer)
 
 const store = createStore(
   rootReducer, // Combined reducers from ./reducers/index.js
-  applyMiddleware(thunk, reduxPackMiddleware),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  // compose(middleware, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+  middleware
 )
 
 ReactDOM.render((
