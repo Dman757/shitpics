@@ -19,8 +19,8 @@ const middleware = applyMiddleware(thunk, reduxPackMiddleware)
 
 const store = createStore(
   rootReducer, // Combined reducers from ./reducers/index.js
-  compose(middleware, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
-  // middleware
+  // compose(middleware, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+  middleware
 )
 
 ReactDOM.render((
