@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
-import { Button } from 'semantic-ui-react'
 import Posts from './Posts'
 class What extends Component {
   componentWillMount () {
     this.props.loadPosts()
   }
   render () {
-    console.log(this.props)
+    // console.log(this.props)
     return (
       <Posts posts={this.props.posts} />
     )

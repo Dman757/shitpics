@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 const mapStateToProps = ({ wordpress }) => {
   // Do stuff with data then return only what you need
-  console.log('wordpress', wordpress)
+  // console.log('wordpress', wordpress)
   return {
     posts: wordpress.posts
     // loading: state.wordpress.isLoading,

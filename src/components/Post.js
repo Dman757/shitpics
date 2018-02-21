@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
-import { Button } from 'semantic-ui-react'
+import React from 'react'
 
 const Post = (props) => {
   // const { wordpress } = props
-  console.log(props)
+  // console.log(props)
   // console.log(wordpress.posts)
   return (
     <div className='Wordpress-post'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Post from './Post'
 const Posts = (props) => {
-  console.log(props)
+  // console.log(props)
   return (
     <div className='Wordpress-wrapper'>
       {props.posts && (
