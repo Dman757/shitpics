@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom'
 
 class NavBar extends Component {
   render () {
-    console.log(this.props, 'fuck')
     const { pathname } = this.props.location
-    console.log(pathname)
     return (
       <Menu pointing>
         <Menu.Item

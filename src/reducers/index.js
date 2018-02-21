@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 
-import wordpressReducer from './wordpress'
+import wordpress from './wordpress'
 // Import reducers
 
 const rootReducer = combineReducers({
-  wordpressReducer
+  wordpress
 })
 
 export default rootReducer

@@ -15,12 +15,11 @@ wordpress.getAll = () => {
 }
 
 // Returns all Pages
-wordpress.getAllPages = () => (dispatch) => {
-  console.log('what')
-  return dispatch({
+wordpress.getAllPages = () => {
+  return {
     type: WORDPRESS_GET_ALL_PAGES,
     promise: Wordpress.getAllPages()
-  })
+  }
 }
 
 // Returns all Posts

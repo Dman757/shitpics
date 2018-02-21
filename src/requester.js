@@ -5,7 +5,7 @@ let API_URL = config.WP_API_URL
 
 export const get = async (endpoint) => {
   let payload = await axios.get(`${API_URL}${endpoint}`)
-  console.log(payload)
+  // console.log(payload)
   return payload.data
 }
 
