@@ -1,3 +1,3 @@
 export default {
-  WP_API_URL: 'https://demo.wp-api.org/wp-json/'
+  WP_API_URL: 'https://blog.nmrih2.com/?rest_route=/'
 }
