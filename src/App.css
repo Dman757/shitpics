@@ -22,16 +22,36 @@ body.colorShit {
 }
 
 .Wordpress-wrapper {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  margin: 0 5rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: 0 5rem; */
+  max-width: 750px;
+  margin: auto;
 }
 
 .Wordpress-post {
   /* align-self: center; */
-  margin: 0 0 3rem;
+  /* margin: 0 0 3rem; */
+  /* margin: 2rem; */
+}
+
+.Wordpress-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wp-video {
+  max-width: 100%;
+  margin: auto!important;
+  width: auto!important
+}
+
+.Wordpress-post video{
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 @keyframes App-logo-spin {
