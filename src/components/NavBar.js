@@ -20,6 +20,12 @@ class NavBar extends Component {
           active={pathname === '/what'}
           name='what'
         />
+        <Menu.Item
+          as={Link}
+          to='/shithouse'
+          active={pathname === '/shithouse'}
+          name='SHITHOUSE'
+        />
       </Menu>
     )
   }

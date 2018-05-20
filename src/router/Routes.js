@@ -1,6 +1,7 @@
 import {
   AppPage,
-  WhatPage
+  WhatPage,
+  Shithouse
 } from '../pages/'
 
 const routes = [
@@ -12,6 +13,10 @@ const routes = [
   {
     path: '/what',
     component: WhatPage
+  },
+  {
+    path: '/shithouse',
+    component: Shithouse
   }
 ]
 
