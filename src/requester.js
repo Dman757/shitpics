@@ -20,7 +20,7 @@ export const getShit = async () => {
   //   // headers: {}
   // })
   let payload = await axios.get(SHIT)
-  console.log(payload)
+  console.log('fuq', payload)
   return payload.data
 }
 
