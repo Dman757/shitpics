@@ -11,6 +11,11 @@ export const get = async (endpoint) => {
 }
 
 export const getShit = async () => {
+
+  // const agent = new https.Agent({  
+  //   rejectUnauthorized: false
+  // });
+  // axios.get('https://something.com/foo', );
   // let payload = await axios({
   //   method: 'get',
   //   url: 'http://api.shithouse.tv',
