@@ -14,7 +14,7 @@ class Shithouse extends Component {
         <div>
           <ul>
             {map(this.props.bumps, bump => (
-              <li>
+              <li key={bump.name}>
                 <a href={`https://${bump.name}.shithouse.tv`}>{bump.name}</a>
               </li>
             ))}

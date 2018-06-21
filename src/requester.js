@@ -15,12 +15,12 @@ export const getShit = async () => {
   //   method: 'get',
   //   url: 'http://api.shithouse.tv',
   //   responseType: 'text',
-  //   // headers: {'Access-Control-Allow-Origin': '*'}
-  //   headers: { 'content-type': 'text/html' },
+  //   mode: 'no-cors',
+  //   headers: {'Access-Control-Allow-Origin': '*',}
+  //   // headers: { 'content-type': 'text/html' },
   //   // headers: {}
   // })
-  let payload = await axios.get(SHIT)
-  console.log('fuq', payload)
+    let payload = await axios.get(SHIT)
   return payload.data
 }
 
