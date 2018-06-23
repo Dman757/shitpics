@@ -25,7 +25,10 @@ export const getShit = async () => {
   //   // headers: { 'content-type': 'text/html' },
   //   // headers: {}
   // })
+  // let derp = await fetch(SHIT)
+  // console.log('aaaaaaaaaa', derp)
     let payload = await axios.get(SHIT)
+    console.log(payload)
   return payload.data
 }
 
