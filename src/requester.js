@@ -1,5 +1,7 @@
 import axios from 'axios'
 import config from './config'
+import { waitResponse } from './utils'
+import { bumps } from './constants'
 
 let API_URL = config.WP_API_URL
 let SHIT = config.SHIT_API_URL
@@ -28,6 +30,11 @@ export const getShit = async () => {
   // let derp = await fetch(SHIT)
   // console.log('aaaaaaaaaa', derp)
     let payload = await axios.get(SHIT)
+    console.log('ack', payload.length,'payload', payload)
+    if (payload.length <= 0) {
+      const derp = await waitResponse(10, bumps) //getShit()
+      return derp
+    }
     console.log(payload)
   return payload.data
 }
