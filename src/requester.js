@@ -29,14 +29,15 @@ export const getShit = async () => {
   // })
   // let derp = await fetch(SHIT)
   // console.log('aaaaaaaaaa', derp)
+  try {
     let payload = await axios.get(SHIT)
     console.log('ack', payload.length,'payload', payload)
-    if (payload.length <= 0) {
-      const derp = await waitResponse(10, bumps) //getShit()
-      return derp
-    }
-    console.log(payload)
-  return payload.data
+    return payload.data
+  } catch(err) {
+    console.error('YALL FUCKED UP', err)
+  }
+    const derp = await waitResponse(10, bumps) //BACK UP BUMPS BECAUSE FUCKIN HTTPS EXPIRED AND WALLY WON'T FIX HIS SHIT
+    return derp  
 }
 
 export const post = async (endpoint, payload) => {
