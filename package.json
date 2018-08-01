@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-lottie": "^1.2.3",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
@@ -13,8 +13,8 @@
     "redux": "^4.0.0",
     "redux-pack": "^0.1.5",
     "redux-thunk": "^2.3.0",
-    "semantic-ui-css": "^2.3.2",
-    "semantic-ui-react": "^0.81.3"
+    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
     "start": "react-scripts start",
