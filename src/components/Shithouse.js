@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import map from 'lodash/map'
 class Shithouse extends Component {
-  componentWillMount() {
+  componentDidMount() {
       this.props.loadShit()
   }
 
