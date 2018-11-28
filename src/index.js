@@ -13,7 +13,7 @@ import 'semantic-ui-css/semantic.min.css'
 import rootReducer from './reducers'
 import Router from './router/Router'
 
-import registerServiceWorker from './registerServiceWorker'
+import * as serviceWorker from './serviceWorker';
 
 const middleware = applyMiddleware(thunk, reduxPackMiddleware)
 
@@ -26,8 +26,8 @@ const store = createStore(
 ReactDOM.render((
   <Provider store={store}>
     <BrowserRouter>
-      <Router routeprops={this.props} />
+      <Router />
     </BrowserRouter>
   </Provider>
 ), document.getElementById('root'))
-registerServiceWorker()
+serviceWorker.unregister();

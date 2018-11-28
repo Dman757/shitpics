@@ -6,7 +6,7 @@ import NavBar from '../components/NavBar'
 class Router extends Component {
   render () {
     return (
-      <div>
+      <>
         <Route component={NavBar} />
         <Switch>
           {routes.map(route => (
@@ -17,7 +17,7 @@ class Router extends Component {
               component={route.component}
             />))}
         </Switch>
-      </div>
+      </>
     )
   }
 }
